@@ -1,0 +1,7 @@
+m , n = map(int,input().split())
+c = 0 
+for _ in range(m):
+    x = list(map(int , input().split()))
+    y = x[1:]
+    c += max(y) ** 2
+print(c % n)
